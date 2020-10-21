@@ -1,0 +1,184 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="fluig-style-guide">
+		<form role="form">
+			<div class="panel panel-primary">
+	    		<div class="panel-heading">
+	        		<h3 class="panel-title"><i class="fluigicon fluigicon-user icon-md"></i>i18n.translate("Requisitante")</h3>
+	    		</div>
+	    		<div class="panel-body">
+	        		<div class="row">
+						<div class="form-group col-md-6">
+					        <label for="nome">i18n.translate("Nome")</label>
+					        <input type="nome" name="nome" class="form-control" id="nome">
+					    </div>
+						<div class="form-group col-md-6">
+					        <label for="Email">i18n.translate("Email")</label>
+					        <input type="email" name="email" class="form-control" id="Email">
+					    </div>
+					    <div class="form-group col-md-4">
+					        <label for="Password">i18n.translate("Senha")</label>
+					        <input type="password" name="senha" class="form-control" id="Password">
+					    </div>
+					    <div class="form-group col-md-2">
+					        <label for="PhoneNumber">i18n.translate("Numero")</label>
+					        <input type="text" name="telefone" class="form-control" id="PhoneNumber">
+					    </div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-4">
+					        <label for="RG">i18n.translate("RG")</label>
+					        <input type="text" name="rg" class="form-control" id="rg">
+					    </div>
+						<div class="form-group col-md-2">
+					        <label for="DataDeNasc">i18n.translate("DatadeNascimento")</label>
+					        <input type="text" name="dataNasc" class="form-control" id="DataNasc">
+					    </div>
+					</div>
+	    		</div>
+			</div>
+			<div class="panel panel-primary">
+	    		<div class="panel-heading">
+	        		<h3 class="panel-title"><i class="fluigicon fluigicon-map-marker icon-md"></i>i18n.translate("PontoComercial")</h3>
+	    		</div>
+	    		<div class="panel-body">
+	        		<div class="row">
+	        			<div class="form-group col-md-2">
+							<label for="">País</label>
+							<select name="pais" id="pais" class="form-control">
+								<option value="Brasil">Brasil</option>
+								<option value="Uruguai">Uruguai</option>
+								<option value="EUA">EUA</option>
+							</select>
+						</div>
+						<div class="form-group col-md-2">
+					        <label for="tipoPonto">i18n.translate("TipodePonto")</label>
+					        <div class="radio">
+						        <label> <input type="radio" name="tipoPonto" id="tipoPonto" value="quiosque">i18n.translate("Quiosque")</label>
+						        <label> <input type="radio" name="tipoPonto" id="tipoPonto" value="loja">i18n.translate("Loja")</label>
+						    </div>
+					    </div>
+					    <div class="form-group col-md-4">
+					        <label for="tipoPonto">i18n.translate("Diasdefuncionamento")</label>
+					        <div class="checkbox">
+						        <label> <input type="checkbox" name="seg" id="seg">i18n.translate("Seg")</label>
+						        <label> <input type="checkbox" name="ter" id="ter">i18n.translate("Ter")</label>
+						        <label> <input type="checkbox" name="qua" id="ter">i18n.translate("Qua")</label>
+						        <label> <input type="checkbox" name="qui" id="ter">i18n.translate("Qui")</label>
+						        <label> <input type="checkbox" name="sex" id="ter">i18n.translate("Sex")</label>
+						        <label> <input type="checkbox" name="sab" id="ter">i18n.translate("Sab")</label>
+						        <label> <input type="checkbox" name="dom" id="ter">i18n.translate("Dom")</label>
+						    </div>
+					    </div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-2">
+					        <label for="cep">i18n.translate("CEP")</label>
+					        <input type="text" name="cep" id="cep" class="form-control" mask="00000-000">
+					    </div>
+					    <div class="form-group col-md-3">
+					        <label for="logradouro">i18n.translate("Logradouro")</label>
+					        <input type="text" name="logradouro" id="logradouro" class="form-control">
+					    </div>
+					    <div class="form-group col-md-1">
+					        <label for="numero">i18n.translate("Numero")</label>
+					        <input type="text" name="numero" id="numero" class="form-control">
+					    </div>
+					    <div class="form-group col-md-2">
+					        <label for="bairro">i18n.translate("Bairro")</label>
+					        <input type="text" name="bairro" id="bairro" class="form-control">
+					    </div>
+					    <div class="form-group col-md-2">
+					        <label for="cidade">i18n.translate("Cidade")</label>
+					        <input type="text" name="cidade" id="cidade" class="form-control">
+					    </div>
+					    <div class="form-group col-md-2">
+					        <label for="estado">i18n.translate("Estado")</label>
+					        <input type="text" name="estado" id="estado" class="form-control">
+					    </div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+					        <label for="informacoes">i18n.translate("Informacoesadicionais")</label>
+					        <textarea rows="5" name="informacoes" id="informacoes" class="form-control"></textarea>
+					    </div>
+					</div>
+	    		</div>
+			</div>
+			<div class="panel panel-primary">
+	    		<div class="panel-heading">
+	        		<h3 class="panel-title"><i class="fluigicon fluigicon-users icon-md"></i>i18n.translate("Responsaveis")</h3>
+	    		</div>
+	    		<div class="panel-body">
+	        		<div class="row">
+						<table tablename="responsaveisTabela" class="table table-hover" addbuttonclass="btn btn-info">
+							<thead>
+								<tr>
+									<td>i18n.translate("Responsaveis")</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input
+										    type="zoom"
+										    id = "responsaveis"
+										    name="responsaveis"
+										    data-zoom="{
+										        'displayKey':'nome',
+										        'datasetId':'dsResponsaveisRayssa',
+										        'placeholder':'Escolha o usuário',
+										        'fields':[
+										            {
+										               'field':'login',
+										               'label':'ID'
+										            },{
+										              'field':'nome',
+										              'label':'Nome',
+										              'standard':'true'
+										            }
+										        ]
+										    }"
+										/>	
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-primary">
+	    		<div class="panel-heading">
+	        		<h3 class="panel-title"><i class="fluigicon fluigicon-money icon-md"></i>i18n.translate("Financeiro")</h3>
+	    		</div>
+	    		<div class="panel-body">
+	        		<div class="row">
+						
+						<div class="form-group col-md-2">
+					        <label for="moeda">Moeda</label>
+					        <select type="number" name="moeda" id="moeda" class="form-control" dataset="dsFormMoedasHi" datasetkey="moeda" datasetvalue="simbolo"></select>
+								
+						</div>
+						
+						<div class="form-group col-md-2">
+					        <label for="valor">Valor</label>
+					        <input type="number" name="valor" id="valor" class="form-control">
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="cep.js"></script>
+<script>
+	var CalendarioDataNasc = FLUIGC.calendar('#DataNasc');
+</script>
+</html>
